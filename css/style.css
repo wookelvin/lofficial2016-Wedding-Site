@@ -1,0 +1,617 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Pacifico);
+body {
+  font-family: "Open Sans";
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigator ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigator ul li {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navigator ul li a {
+  display: block;
+  padding: 1em 1em;
+  color: #ddd;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+.navigator ul li a:hover {
+  background-color: RGBA(191, 0, 1, 1);
+  color: white;
+}
+
+#menubtn {
+  background-color: red;
+  color: white;
+  content: '';
+  position: fixed;
+  top: 0.5em;
+  right: 0.5em;
+  height: 4em;
+  width: 4em;
+  z-index: 100;
+  display: none;
+  background-image: url(../img/rectangular4.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+}
+
+.navbtntog {
+  background-image: url(../img/cross97.svg) !important;
+}
+
+@media screen and (max-width: 500px) {
+  #menubtn {
+    display: block;
+  }
+  #fullmenu {
+    display: block;
+    z-index: 99;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.9);
+    pointer-events: none;
+    margin-top: -100%;
+  }
+  #fullmenu.menuopen {
+    pointer-events: all;
+    margin-top: 0%;
+  }
+}
+
+.container-fullwidth {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-height {
+  height: 100vh;
+  min-height: 1100px;
+}
+
+.main-banner {
+  background: url(../img/websiteja.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.arrow-down {
+  display: block;
+  background: url(../img/arrow.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 5em;
+  left: 0;
+  width: 100%;
+  height: 3em;
+}
+
+.container-twocol {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.addpadding {
+  padding: 2em 1em;
+}
+
+.cliptop {
+  -webkit-clip-path: polygon(0% 0%, 50% 5em, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 50% 5em, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -5em;
+  background-color: white;
+}
+
+.section2-title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.section2-invite, .section2-postitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.section2-desc {
+  text-transform: uppercase;
+}
+
+.section2-title2 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+}
+
+.spacediv {
+  height: 1em;
+}
+
+.container-flexrow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-col-onehalf {
+  text-align: center;
+  width: 48%;
+}
+
+.profile {
+  height: 35px;
+  width: auto;
+}
+
+.section2-p {
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+.section3-banner {
+  height: 500px;
+}
+
+.section4-banner {
+  height: 75vh;
+}
+
+.parallax img {
+  width: 100%;
+}
+
+.mobile1, .mobile2, .mobile3 {
+  display: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 100%;
+}
+
+.mobile1 {
+  background-image: url(../img/gallery/ja_scarboroughbluffs_guildpark_engagement-28.jpg);
+}
+
+.mobile2 {
+  background-image: url(../img/ja_scarboroughbluffs_guildpark_engagement-63.jpg);
+}
+
+.mobile3 {
+  background-image: url(../img/ja_scarboroughbluffs_guildpark_engagement-71.jpg);
+}
+
+@media screen and (max-width: 500px) {
+  .parallax {
+    display: none;
+  }
+  .mobile1, .mobile2, .mobile3 {
+    display: block;
+  }
+}
+
+.cntdwn-blk {
+  position: absolute;
+  right: 10%;
+  top: 10em;
+}
+
+#daysleft_num1, #daysleft_num2, #daysleft_num3 {
+  background-color: #E60000;
+  text-align: center;
+  font-size: 7em;
+  padding: 0em 0.2em;
+  font-weight: 700;
+  color: white;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 49%, 0% 49%, 0% 51%, 100% 51%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 49%, 0% 49%, 0% 51%, 100% 51%, 100% 100%, 0% 100%);
+}
+
+#daysleft_num1, #daysleft_num2 {
+  margin-right: 0.05em;
+}
+
+.daysleft_desc {
+  text-align: center;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 500px) {
+  .cntdwn-blk {
+    position: absolute;
+    right: 10%;
+    top: inherit;
+    bottom: 1em;
+  }
+  #daysleft_num1, #daysleft_num2, #daysleft_num3 {
+    font-size: 2em;
+  }
+}
+
+.container-onecol {
+  max-width: 330px;
+  width: 100%;
+  text-align: center;
+}
+
+.section3-text {
+  font-size: 0.8em;
+}
+
+.section3-text h1 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 300 !important;
+}
+
+.section3-text h2 {
+  font-size: 1.6em;
+}
+
+.section3-text p {
+  text-align: justify;
+}
+
+.section3-text p:first-child:first-letter {
+  float: left;
+  font-size: 4em;
+  line-height: 0.9em;
+}
+
+.formgroup {
+  margin-bottom: 1em;
+}
+
+.guest {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.guest .formcol1 {
+  width: 70%;
+}
+
+.guest .formcol2 {
+  width: 25%;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+textarea {
+  height: 10em;
+  width: 100%;
+  border: 1px solid #bbb;
+  background-color: white;
+}
+
+input, select {
+  padding: 0.25em 0 0;
+  margin-bottom: 0 !important;
+  font-size: 1.5em !important;
+  height: 2em !important;
+  font-family: "Open Sans";
+  text-align: center;
+  font-weight: 300;
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 0px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+}
+
+select {
+  padding: 0.25em 0.8em;
+}
+
+.selectgroup {
+  position: relative;
+  height: 3em;
+  height: auto;
+}
+
+.selectgroup:after {
+  height: 0px;
+  width: 0px;
+  border-top: 7.5px solid red;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  content: '';
+  right: 1em;
+  top: 1.5em;
+  margin-top: -2.5px;
+  background-color: white;
+  z-index: 5;
+  pointer-events: none;
+}
+
+button {
+  font-family: "Open Sans";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  font-size: 1.2em;
+  padding: 0.7em 1em;
+  color: white;
+  border: 0;
+  background: -webkit-linear-gradient(315deg, RGBA(217, 0, 0, 1) 50%, RGBA(155, 0, 0, 1) 51%);
+  background: linear-gradient(135deg, RGBA(217, 0, 0, 1) 50%, RGBA(155, 0, 0, 1) 51%);
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+button:hover {
+  background: -webkit-linear-gradient(315deg, RGBA(217, 0, 0, 1) 90%, RGBA(155, 0, 0, 1) 91%);
+  background: linear-gradient(135deg, RGBA(217, 0, 0, 1) 90%, RGBA(155, 0, 0, 1) 91%);
+}
+
+textarea {
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.gallery {
+  display: block;
+  max-height: 800px;
+}
+
+.gallery img {
+  width: 100vw;
+  margin-top: -10%;
+}
+
+.unslider-arrow {
+  height: 5em;
+  width: 5em;
+  background-color: #e60000;
+  color: White;
+  text-transform: uppercase;
+  position: absolute;
+  display: block;
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 5;
+  top: 50%;
+  margin-top: -2.5em;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+.unslider-arrow:hover {
+  -webkit-transform: translateY(-0.5em);
+      -ms-transform: translateY(-0.5em);
+          transform: translateY(-0.5em);
+  -webkit-box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.unslider-arrow:active {
+  -webkit-transform: translateY(-0.4em);
+      -ms-transform: translateY(-0.4em);
+          transform: translateY(-0.4em);
+  -webkit-box-shadow: 0 0.4em 0.4em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.4em 0.4em rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  background-image: url(../img/direction196.svg);
+  left: 0;
+}
+
+.next {
+  background-image: url(../img/direction202.svg);
+  right: 0 !important;
+}
+
+@media screen and (max-width: 500px) {
+  .unslider-arrow {
+    height: 2em;
+    width: 2em;
+    background-size: 1em;
+    margin-top: -1em;
+  }
+}
+
+.titlesep {
+  display: inline-block;
+}
+
+.titlesep:not(:last-child):after {
+  content: '';
+  background-image: url(../img/dot.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 8px;
+  display: inline-block;
+  height: 20px;
+}
+
+.unslider-nav ol {
+  background-color: white;
+  margin-top: -30px;
+}
+
+.unslider-nav ol li {
+  border-top-color: #aaa;
+  border-left-color: #aaa;
+  border-right-color: #aaa;
+  border-bottom-color: #aaa;
+}
+
+.unslider-nav ol li.unslider-active {
+  background-color: #aaa !important;
+}
+
+.addbg {
+  background: url(../img/bg3.png), -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background: url(../img/bg3.png), -webkit-linear-gradient(white, white);
+  background: url(../img/bg3.png), linear-gradient(white, white);
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: repeat-y;
+}
+
+label.error {
+  color: red;
+  background-color: pink;
+}
+
+.mealopt {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mealdesc {
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+  .section2-p, .section3-text {
+    font-size: 1em;
+  }
+}
+
+.mobilecover {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .mobilecover {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    height: 5em;
+    width: 100%;
+    top: 280px;
+    left: 0;
+    z-index: 5;
+    background-color: white;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Pacifico";
+    text-align: center;
+    font-size: 3em;
+  }
+}
+
+img.inline {
+  display: inline-block;
+  height: 5em;
+}
+
+#thewedding {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+#thewedding .container-fullwidth.flex.addpadding {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+#thewedding .container-fullwidth.flex.addpadding h1:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
